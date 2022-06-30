@@ -202,3 +202,4 @@ def mult_hist(sr, rows, cols, title_text, subplot_titles, interactive=False):
         fig.show()
     else:
         return Image(pio.to_image(fig, format='png', width=1200))
+
