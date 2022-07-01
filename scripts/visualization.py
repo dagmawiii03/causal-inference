@@ -24,6 +24,7 @@ def violinplot(x, y, start: int = 0, num_features: int = 10):
     plt.show()
 
 
+
 def plot_count(df: pd.DataFrame, column: str, xcolumn: str = None, ycolumn: str = None) -> None:
     plt.figure(figsize=(12, 7))
     sns.countplot(data=df, x=column)
