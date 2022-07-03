@@ -22,6 +22,18 @@ def violinplot(x, y, start: int = 0, num_features: int = 10):
                    data=data, split=True, inner="quart")
     plt.xticks(rotation=90)
     plt.show()
+    
+def plot_importance(random_feat_imp):
+    fig = plt.figure(figsize=(12, 12))
+    sns.barplot(data=random_feat_imp, x="importance", y="features")
+    plt.title("Feature importance", size=18)
+    plt.xticks(rotation=60, fontsize=14)
+    plt.yticks(fontsize=14)
+    plt.xlabel('features', fontsize=16)
+    plt.ylabel("features importance", fontsize=16)
+    plt.show()
+
+    return fig
 
 
 def plot_count(df: pd.DataFrame, column: str, xcolumn: str = None, ycolumn: str = None) -> None:
@@ -202,4 +214,5 @@ def mult_hist(sr, rows, cols, title_text, subplot_titles, interactive=False):
         fig.show()
     else:
         return Image(pio.to_image(fig, format='png', width=1200))
+
 
