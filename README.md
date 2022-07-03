@@ -1,7 +1,5 @@
 # causal-inference
- <p align="center">
-  https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdk-Qwn03QQv4HUwmTB_jUny3mwmKwq73ukg&usqp=CAU
-</p>
+ <div style="text-align:center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdk-Qwn03QQv4HUwmTB_jUny3mwmKwq73ukg&usqp=CAU" /></div>.
 
 Table of content 
 - [Overview](##overview)
