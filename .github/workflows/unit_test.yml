@@ -1,12 +1,8 @@
-name: unit-tests
-on:
-  push:
-    branches:
-      - main
-      - unit-test
+name: GitHub Actions Demo
+on: [push]
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
+    runs-on: Ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
@@ -20,8 +16,6 @@ jobs:
           ls ${{ github.workspace }}
       - name: Install requirements
         run: pip install -r requirements.txt
-      # TODO: test go here.
-      - name: Run
-        run: python -m unittest tests.test
-      # TODO: test end here.
+      - name: Run tests
+        run: python -m unittest tests/test_data_info.py
       - run: echo "🍏 This job's status is ${{ job.status }}."
